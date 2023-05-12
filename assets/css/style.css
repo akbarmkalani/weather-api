@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@500&display=swap");
+* {
+  font-family: "Wix Madefor Display", sans-serif;
+}
+* li {
+  list-style-type: none;
+}
+
+main {
+  background-image: url("../img/landscape-1844226.svg");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+main::after {
+  content: "";
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(2, 0, 36, 0.436);
+  z-index: 1;
+}
+main > section {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  z-index: 999;
+}
+
+.searchBox > h1 {
+  color: rgba(247, 182, 29, 0.9803921569);
+  font-weight: bold;
+}
+.searchBox > form > input {
+  border: none;
+  outline: none;
+  background: none;
+  height: 60px;
+  border-bottom: 3px solid rgba(247, 182, 29, 0.9803921569);
+  color: white;
+}
+.searchBox > form > input::-moz-placeholder {
+  color: white;
+}
+.searchBox > form > input::placeholder {
+  color: white;
+}
+.searchBox > form > button {
+  background: none;
+  border: none;
+  outline: none;
+  border: 1px solid rgba(247, 182, 29, 0.9803921569);
+  color: white;
+  font-size: 24px;
+  transition: 0.4s;
+  border-radius: 40px;
+  background-color: rgba(173, 6, 6, 0.4039215686);
+}
+.searchBox > form > button:hover {
+  background-color: #AD0606;
+  border: 1px solid white;
+}
+.searchBox > form > .msg {
+  color: #c50b04;
+}
+
+.closed {
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 26px;
+  color: #c50b04;
+}
+
+.list > div > ._liBox {
+  border-radius: 10px;
+  background-color: rgba(82, 173, 185, 0.7215686275);
+}
+.list > div > ._liBox .countery {
+  background-color: #f00538 !important;
+  color: #ffffff;
+  font-size: 17px;
+  padding: 5px;
+  border-radius: 15px;
+}
+.list > div > ._liBox .name {
+  color: white;
+}/*# sourceMappingURL=style.css.map */
